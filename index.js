@@ -4,12 +4,18 @@
 // OMEGA Best case senario
 // AVERAGE case Omocron or O
 
+{/**
+O(n) Here we are passing n in the function and this 
+operation will run n times
+meaning if n = 5, the equation runs 5 times. If n = 10, it runs 10 times
+*/}
+
 function logItems(n) {
     for(let i = 0; i < n; i++ ) {
-        console.log(1);
+        console.log(i);
     }
 }
-// logItems(10);
+logItems(10);
 
 let arrayOfNumbers = [1,2,3,4,5,6];
 
