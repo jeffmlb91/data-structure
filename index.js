@@ -41,4 +41,21 @@ function logItems2(n) {
         console.log("second operation", j)
     }
 }
-logItems2(3)
+// logItems2(3)
+
+{/**
+ O(n^2) completes operations twice as slow than the O(n)
+ In the following, we will add a for loop to the first for loop.
+ Each operation of the first for each interation for the first for loop will be applied 
+
+ Therefore n * n = n^2 which equals O(n^2)
+*/}
+
+function logItems3(n) {
+    for ( let i = 0; i < n; i++) {
+        for( let j = 0; j < n; j++) {
+            console.log(i, j)
+        }
+    }
+}
+logItems3(10)
